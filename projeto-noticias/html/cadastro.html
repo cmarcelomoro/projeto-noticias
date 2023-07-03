@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Cadastro</title>
+</head>
+<body>
+
+	<style>
+
+		body{
+			color: white;
+			background-color: #252525;
+			display: flex;
+			justify-content: center;
+			
+		}
+		form{
+			
+			background-color:#363636;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			padding: 35px;
+		}
+		a{
+			color: white;
+		}
+		#botaoCadastro{
+			margin-right: 30px ;
+		}
+
+	</style>
+	<div class="centro">
+		<form  action="script/cadastro.php" method="POST">		
+			<h1>Cadastro</h1>
+			<label for="nome">Nome:</label>
+			<input type="text" id="nome" name="nome" required>
+			<br>
+			<br>
+			<label for="senha">Senha:</label>
+			<input type="password" id="senha" name="senha" required>
+			<br>
+			<br>
+			<label for="token">Token:</label>
+            <input type="password" id="token" name="token">
+            <br>
+            <br>
+			<input type="submit" value="Cadastrar" id="botaoCadastro">
+            <a href="login.html">
+                Já tenho conta
+			</a>
+		</form>
+		
+		
+	
+	
+	</div>
+	
+
+</body>
+</html>
